@@ -1,0 +1,251 @@
+{% extends 'base.html' %}
+
+{% block title %}SENAI/SESI - Início{% endblock %}
+
+{% block content %}
+<section id="inicio" class="hero">
+    <div class="container">
+        <h1>Bem-vindo ao SENAI/SESI</h1>
+        <p>Conheça nossa instituição, nossas instalações e os depoimentos de quem faz parte da nossa história.</p>
+    </div>
+</section>
+
+<section id="planta" class="planta-section">
+    <div class="container">
+        <h2>Planta da Instituição</h2>
+        <div class="planta-container">
+            <img src="{{ url_for('static', filename='images/planta.png') }}" alt="Planta da Instituição SENAI/SESI" class="planta-img">
+            
+            <div class="legenda">
+                <h3>Legenda</h3>
+                <div class="legenda-grid">
+                    <div class="legenda-item">
+                        <div class="legenda-numero">1</div>
+                        <span>Recepção</span>
+                    </div>
+                    <div class="legenda-item">
+                        <div class="legenda-numero">2</div>
+                        <span>Administração</span>
+                    </div>
+                    <div class="legenda-item">
+                        <div class="legenda-numero">3</div>
+                        <span>Sala de Aula 01</span>
+                    </div>
+                    <div class="legenda-item">
+                        <div class="legenda-numero">4</div>
+                        <span>Sala de Aula 02</span>
+                    </div>
+                    <div class="legenda-item">
+                        <div class="legenda-numero">5</div>
+                        <span>Laboratório de Informática</span>
+                    </div>
+                    <div class="legenda-item">
+                        <div class="legenda-numero">6</div>
+                        <span>Laboratório Técnico</span>
+                    </div>
+                    <div class="legenda-item">
+                        <div class="legenda-numero">7</div>
+                        <span>Biblioteca</span>
+                    </div>
+                    <div class="legenda-item">
+                        <div class="legenda-numero">8</div>
+                        <span>Auditório</span>
+                    </div>
+                    <div class="legenda-item">
+                        <div class="legenda-numero">9</div>
+                        <span>Refeitório</span>
+                    </div>
+                    <div class="legenda-item">
+                        <div class="legenda-numero">10</div>
+                        <span>Área de Convivência</span>
+                    </div>
+                    <div class="legenda-item">
+                        <div class="legenda-numero">11</div>
+                        <span>Estacionamento</span>
+                    </div>
+                    <div class="legenda-item">
+                        <div class="legenda-numero">12</div>
+                        <span>Quadra Poliesportiva</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="galeria" class="galeria-section">
+    <div class="container">
+        <h2>Galeria de Imagens</h2>
+        <div class="galeria-grid">
+            <div class="galeria-item">
+                <img src="{{ url_for('static', filename='images/galeria1.jpeg') }}" alt="Predial" class="galeria-img">
+                <div class="galeria-caption">Predial</div>
+            </div>
+            <div class="galeria-item">
+                <img src="{{ url_for('static', filename='images/galeria2.jpeg') }}" alt="Laboratório de Informática" class="galeria-img">
+                <div class="galeria-caption">Laboratório de Informática</div>
+            </div>
+            <div class="galeria-item">
+                <img src="{{ url_for('static', filename='images/galeria3.jpeg') }}" alt="Oficina Mecânica" class="galeria-img">
+                <div class="galeria-caption">Oficina Mecânica</div>
+            </div>
+            <div class="galeria-item">
+                <img src="{{ url_for('static', filename='images/galeria4.jpeg') }}" alt="Eletrônica" class="galeria-img">
+                <div class="galeria-caption">Eletrônica</div>
+            </div>
+            <div class="galeria-item">
+                <img src="{{ url_for('static', filename='images/galeria5.jpeg') }}" alt="Sala de Aula" class="galeria-img">
+                <div class="galeria-caption">Sala de Aula</div>
+            </div>
+            <div class="galeria-item">
+                <img src="{{ url_for('static', filename='images/galeria6.jpeg') }}" alt="Biblioteca" class="galeria-img">
+                <div class="galeria-caption">Biblioteca</div>
+            </div>
+            <div class="galeria-item">
+                <img src="{{ url_for('static', filename='images/galeria7.jpeg') }}" alt="Pneumática" class="galeria-img">
+                <div class="galeria-caption">Pneumática</div>
+            </div>
+            <div class="galeria-item">
+                <img src="{{ url_for('static', filename='images/galeria8.jpeg') }}" alt="Auditório" class="galeria-img">
+                <div class="galeria-caption">Auditório</div>
+            </div>
+            <div class="galeria-item">
+                <img src="{{ url_for('static', filename='images/galeria9.jpeg') }}" alt="Laboratório de Solda" class="galeria-img">
+                <div class="galeria-caption">Laboratório de Solda</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="depoimentos" class="depoimentos-section">
+    <div class="container">
+        <h2>Depoimentos</h2>
+        <div class="depoimentos-container">
+                        <!-- HTML para o card de depoimento com faixa de sucesso -->
+            <div class="depoimento-card depoimento-card-destaque">
+                <div class="faixa-sucesso">Sucesso</div>
+                <div class="depoimento-img-container">
+                    <img src="{{ url_for('static', filename='images/depoimento11.jpeg') }}" alt="Foto de Thaila Ayra" class="depoimento-img">
+                </div>
+                <div class="depoimento-content">
+                    <p class="depoimento-texto">Senai é a porta de entrada para a indústria, onde se inicia toda a base profissional necessária para atuar na área.
+o Senai me promoveu a instrução necessária para atuar na Ektor Engenharia que foi onde iniciei minha carreira na área industrial, hoje atuo como operador assistente na Suzano em Ribas do Rio Pardo, MS.</p>
+                    <span class="depoimento-autor">Davy</span>
+                    <span class="depoimento-cargo">Operador Assistente</span>
+                </div>
+            </div>
+            <div class="depoimento-card">
+                <div class="depoimento-img-container">
+                    <img src="{{ url_for('static', filename='images/depoimento6.jpeg') }}" alt="Maria Vitória" class="depoimento-img">
+                </div>
+                <div class="depoimento-content">
+                    <p class="depoimento-texto">o Senai é uma segunda casa, você entra aqui e sua cabeça se expande, trazendo novas oportunidades.</p>
+                    <span class="depoimento-autor">Maria Vitória</span>
+                    <span class="depoimento-cargo">Técnico em Mecânica</span>
+                </div>
+            </div>
+            
+            <div class="depoimento-card">
+                <div class="depoimento-img-container">
+                    <img src="{{ url_for('static', filename='images/depoimento3.jpeg') }}" alt="Foto de Luiz" class="depoimento-img">
+                </div>
+                <div class="depoimento-content">
+                    <p class="depoimento-texto">o Senai é um lugar acolhedor, traz bastante oportunidade.</p>
+                    <span class="depoimento-autor">Luiz</span>
+                    <span class="depoimento-cargo">Técnico em Eletroeletrônica</span>
+                </div>
+            </div>
+            
+            <div class="depoimento-card">
+                <div class="depoimento-img-container">
+                    <img src="{{ url_for('static', filename='images/depoimento4.jpeg') }}" alt="Foto de Arthur" class="depoimento-img">
+                </div>
+                <div class="depoimento-content">
+                    <p class="depoimento-texto">Um lugar acolhedor, um lugar que pode qualificar novas oportunidades, um lugar onde eu possa colher amadurecimento, onde posso garantir o meu futuro.</p>
+                    <span class="depoimento-autor">Arthur</span>
+                    <span class="depoimento-cargo">Aprendizagem Elétrica e Manutenção</span>
+                </div>
+            </div>
+            
+            <div class="depoimento-card">
+                <div class="depoimento-img-container">
+                    <img src="{{ url_for('static', filename='images/depoimento5.jpeg') }}" alt="Foto de Kesly e Luccas Saconni" class="depoimento-img">
+                </div>
+                <div class="depoimento-content">
+                    <p class="depoimento-texto">Uma oportunidade para aprender mais, saber como agir no mercado de trabalho, se comunicar com as pessoas. Ele trouxe mais comunicação, como é o mercado, trouxe diversas ideias, trouxe outro olhar para o mercado de trabalho.</p>
+                    <span class="depoimento-autor">Kesly e Luccas Saconni</span>
+                    <span class="depoimento-cargo">Técnico em Eletrotécnica</span>
+                </div>
+            </div>
+            
+            <div class="depoimento-card">
+                <div class="depoimento-img-container">
+                    <img src="{{ url_for('static', filename='images/depoimento1.jpeg') }}" alt="Foto de Gabriel de Jesus" class="depoimento-img">
+                </div>
+                <div class="depoimento-content">
+                    <p class="depoimento-texto">O Senai é um lugar ótimo, para as pessoas que não tem rumo, trazendo variedade de áreas de trabalho e oportunidades para alcançar.</p>
+                    <span class="depoimento-autor">Gabriel de Jesus</span>
+                    <span class="depoimento-cargo">Competidor do Senai São Mateus</span>
+                </div>
+            </div>
+            
+            <div class="depoimento-card">
+                <div class="depoimento-img-container">
+                    <img src="{{ url_for('static', filename='images/depoimento2.jpeg') }}" alt="Foto de Gabriely" class="depoimento-img">
+                </div>
+                <div class="depoimento-content">
+                    <p class="depoimento-texto">Você se descobre em termos de profissão e de pessoa, aqui dentro você aprende a lidar com o mercado de trabalho, você se testa sobre o que você é capaz.</p>
+                    <span class="depoimento-autor">Gabriely</span>
+                    <span class="depoimento-cargo">Técnico em Eletroeletrônica</span>
+                </div>
+            </div>
+            
+            <div class="depoimento-card">
+                <div class="depoimento-img-container">
+                    <img src="{{ url_for('static', filename='images/depoimento7.jpeg') }}" alt="Foto de Lavínia" class="depoimento-img">
+                </div>
+                <div class="depoimento-content">
+                    <p class="depoimento-texto">O Senai é uma oportunidade da gente crescer e ter conhecimento.</p>
+                    <span class="depoimento-autor">Lavínia</span>
+                    <span class="depoimento-cargo">Técnico em</span>
+                </div>
+            </div>
+            
+            <div class="depoimento-card">
+                <div class="depoimento-img-container">
+                    <img src="{{ url_for('static', filename='images/depoimento8.jpeg') }}" alt="Foto de Kássia" class="depoimento-img">
+                </div>
+                <div class="depoimento-content">
+                    <p class="depoimento-texto">Eu acho o Senai um lugar que me deu uma visão sobre a indústria no mercado de trabalho, abrindo novas portas, trouxe oportunidade de conhecimento e aprimoramento.</p>
+                    <span class="depoimento-autor">Kássia</span>
+                    <span class="depoimento-cargo">Aprendizagem Elétrica e Manutenção</span>
+                </div>
+            </div>
+            
+            <div class="depoimento-card">
+                <div class="depoimento-img-container">
+                    <img src="{{ url_for('static', filename='images/depoimento9.jpeg') }}" alt="Foto de Alexandre" class="depoimento-img">
+                </div>
+                <div class="depoimento-content">
+                    <p class="depoimento-texto">o Senai é uma instituição que nos traz oportunidades e pode nos encaminhar no mercado do trabalho, e nos proporciona conhecimento.</p>
+                    <span class="depoimento-autor">Alexandre</span>
+                    <span class="depoimento-cargo">Técnico em </span>
+                </div>
+            </div>
+            
+            <div class="depoimento-card">
+                <div class="depoimento-img-container">
+                    <img src="{{ url_for('static', filename='images/depoimento10.jpeg') }}" alt="Foto de Thaila Ayra" class="depoimento-img">
+                </div>
+                <div class="depoimento-content">
+                    <p class="depoimento-texto">O Senai para mim é como se fosse uma segunda casa; onde me sinto à vontade e muito bem acolhida. A unidade sempre me proporcionou boas experiências e recordações, além de sempre apoiar as ideias de projetos propostas pelos alunos.</p>
+                    <span class="depoimento-autor">Thaila Ayra</span>
+                    <span class="depoimento-cargo">Técnico em Desenvolvimento de Sistemas</span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+{% endblock %}
